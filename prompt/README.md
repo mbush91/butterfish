@@ -34,7 +34,7 @@ Here's a more full lifecycle example that demonstrates creating/initializing the
 ```go
 import "fmt"
 import "os"
-import "github.com/bakks/butterfish/prompt"
+import "github.com/mbush91/butterfish/prompt"
 
 
 func NewDiskPromptLibrary(path string, verbose bool, writer io.Writer) (*prompt.DiskPromptLibrary, error) {

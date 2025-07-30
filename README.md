@@ -2,11 +2,11 @@
 
 A shell with AI superpowers
 
-[![Website](https://img.shields.io/badge/website-https://butterfi.sh-blue)](https://butterfi.sh) [![GoDoc](https://godoc.org/github.com/bakks/butterfish?status.svg)](https://godoc.org/github.com/bakks/butterfish) [![Latest Version](https://img.shields.io/github/v/release/bakks/butterfish)](https://github.com/bakks/butterfish/releases) [![@pbbakkum](https://img.shields.io/badge/Updates%20at-%20%40pbbakkum-blue?style=flat&logo=twitter)](https://twitter.com/pbbakkum)
+[![Website](https://img.shields.io/badge/website-https://butterfi.sh-blue)](https://butterfi.sh) [![GoDoc](https://godoc.org/github.com/mbush91/butterfish?status.svg)](https://godoc.org/github.com/mbush91/butterfish) [![Latest Version](https://img.shields.io/github/v/release/mbush91/butterfish)](https://github.com/mbush91/butterfish/releases) [![@pbbakkum](https://img.shields.io/badge/Updates%20at-%20%40pbbakkum-blue?style=flat&logo=twitter)](https://twitter.com/pbbakkum)
 
 #### ** New **
 
-There's now a [Butterfish Neovim plugin](https://github.com/bakks/butterfish.nvim)!
+There's now a [Butterfish Neovim plugin](https://github.com/mbush91/butterfish.nvim)!
 
 ## What is this thing?
 
@@ -26,7 +26,7 @@ Once you run `butterfish shell` you can do the following things from the command
 -   Autocomplete shell commands (if the AI 'verbally' suggested a command it will appear)
 -   "Give me a pasta recipe" (this is a ChatGPT interface so it's not just for shell stuff!)
 
-<img src="https://github.com/bakks/butterfish/raw/main/vhs/gif/shell3.gif" alt="Demo of Butterfish Shell" width="500px" height="250px" />
+<img src="https://github.com/mbush91/butterfish/raw/main/vhs/gif/shell3.gif" alt="Demo of Butterfish Shell" width="500px" height="250px" />
 
 Feedback and external contribution is very welcome! Butterfish is open source under the MIT license. We hope that you find it useful!
 
@@ -38,14 +38,14 @@ To see the raw AI requests / responses you can run Butterfish in verbose mode (`
 
 To configure the prompts you can edit `~/.config/butterfish/prompts.yaml`.
 
-<img src="https://github.com/bakks/butterfish/raw/main/assets/verbose.png" alt="The verbose output of Butterfish Shell showing raw AI prompts" height="400px" />
+<img src="https://github.com/mbush91/butterfish/raw/main/assets/verbose.png" alt="The verbose output of Butterfish Shell showing raw AI prompts" height="400px" />
 
 ## Installation & Authentication
 
 Butterfish works on MacOS and Linux. You can install via Homebrew on MacOS:
 
 ```bash
-brew install bakks/bakks/butterfish
+brew install bakks/mbush91/butterfish
 butterfish shell
 Is this thing working? # Type this literally into the CLI
 ```
@@ -53,7 +53,7 @@ Is this thing working? # Type this literally into the CLI
 You can also install with `go install`:
 
 ```bash
-go install github.com/bakks/butterfish/cmd/butterfish@latest
+go install github.com/mbush91/butterfish/cmd/butterfish@latest
 $(go env GOPATH)/bin/butterfish shell
 Is this thing working? # Type this literally into the CLI
 ```
@@ -81,7 +81,7 @@ How does this work? Shell mode _wraps_ your shell rather than replacing it.
 -   You can autocomplete commands and prompt questions with `Tab`
 -   Prompts and autocomplete use local context for answers, like ChatGPT
 
-<img src="https://github.com/bakks/butterfish/raw/main/vhs/gif/shell2.gif" alt="Butterfish" width="500px" height="250px" />
+<img src="https://github.com/mbush91/butterfish/raw/main/vhs/gif/shell2.gif" alt="Butterfish" width="500px" height="250px" />
 
 This pattern is shockingly effective because your shell history becomes the AI chat context. For example, if you `cat` a file to print it out then the AI will see it. If you tried a command that failed, the AI can see the command and the error.
 
@@ -175,7 +175,7 @@ if it decides the goal is met or impossible, or you can manually exit with
 You can trigger Unsafe Goal Mode by starting a command with `!!`, which will
 execute commands without confirmation, and is thus potentially dangerous.
 
-<img src="https://github.com/bakks/butterfish/raw/main/vhs/gif/goal.gif" alt="Butterfish Goal Mode trying multiple strategies to accomplish a goal." width="500px" height="250px" />
+<img src="https://github.com/mbush91/butterfish/raw/main/vhs/gif/goal.gif" alt="Butterfish Goal Mode trying multiple strategies to accomplish a goal." width="500px" height="250px" />
 
 #### Goal Mode Examples
 
@@ -262,7 +262,7 @@ Flags:
 
 ```
 
-<img src="https://github.com/bakks/butterfish/raw/main/vhs/gif/prompt.gif" alt="Butterfish" width="500px" height="250px" />
+<img src="https://github.com/mbush91/butterfish/raw/main/vhs/gif/prompt.gif" alt="Butterfish" width="500px" height="250px" />
 
 ### `gencmd` - Generate a shell command
 
@@ -293,7 +293,7 @@ Flags:
 
 ```
 
-<img src="https://github.com/bakks/butterfish/raw/main/vhs/gif/gencmd.gif" alt="Butterfish" width="500px" height="250px" />
+<img src="https://github.com/mbush91/butterfish/raw/main/vhs/gif/gencmd.gif" alt="Butterfish" width="500px" height="250px" />
 
 ### `summarize` - Get a semantic summary of file content
 
@@ -330,7 +330,7 @@ Flags:
 
 ```
 
-<img src="https://github.com/bakks/butterfish/raw/main/vhs/gif/summarize.gif" alt="Butterfish" width="500px" height="250px" />
+<img src="https://github.com/mbush91/butterfish/raw/main/vhs/gif/summarize.gif" alt="Butterfish" width="500px" height="250px" />
 
 ### `exec` - Run a command and suggest a fix if it fails
 
@@ -338,7 +338,7 @@ Flags:
 butterfish exec 'find -nam foobar'
 ```
 
-<img src="https://github.com/bakks/butterfish/raw/main/vhs/gif/exec.gif" alt="Butterfish" width="500px" height="250px" />
+<img src="https://github.com/mbush91/butterfish/raw/main/vhs/gif/exec.gif" alt="Butterfish" width="500px" height="250px" />
 
 ### `index` - Index local files with embeddings
 
@@ -348,7 +348,7 @@ butterfish indexsearch "compare indexed embeddings against this string"
 butterfish indexquestion "inject similar indexed embeddings into a prompt"
 ```
 
-<img src="https://github.com/bakks/butterfish/raw/main/vhs/gif/index.gif" alt="Butterfish" width="500px" height="250px" />
+<img src="https://github.com/mbush91/butterfish/raw/main/vhs/gif/index.gif" alt="Butterfish" width="500px" height="250px" />
 
 ## Commands
 
@@ -370,7 +370,7 @@ and the prompt wrappers it uses at ~/.config/butterfish/prompts.yaml. Butterfish
 logs to the system temp dir, usually to /var/tmp/butterfish.log.
 
 To print the full prompts and responses from the OpenAI API, use the --verbose
-flag. Support can be found at https://github.com/bakks/butterfish.
+flag. Support can be found at https://github.com/mbush91/butterfish.
 
 If you do not have OpenAI free credits then you will need a subscription and you
 will need to pay for OpenAI API use. If you're using Shell Mode, autosuggest
@@ -561,7 +561,7 @@ I've been developing Butterfish on an Intel Mac, but it should work fine on ARM 
 
 ```
 brew install git go protobuf protoc-gen-go protoc-gen-go-grpc
-git clone https://github.com/bakks/butterfish
+git clone https://github.com/mbush91/butterfish
 cd butterfish
 make
 ./bin/butterfish prompt "Is this thing working?"

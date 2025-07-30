@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"log"
 
-	alt "github.com/bakks/butterfish/bubbles/altscreenwrapper"
-	"github.com/bakks/butterfish/bubbles/util"
-	"github.com/bakks/butterfish/bubbles/viewport"
+	alt "github.com/mbush91/butterfish/bubbles/altscreenwrapper"
+	"github.com/mbush91/butterfish/bubbles/util"
+	"github.com/mbush91/butterfish/bubbles/viewport"
 	"github.com/charmbracelet/bubbles/textarea"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"

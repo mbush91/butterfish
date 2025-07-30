@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	pb "github.com/bakks/butterfish/proto"
+	pb "github.com/mbush91/butterfish/proto"
 	"github.com/spf13/afero"
 	"github.com/stretchr/testify/assert"
 )

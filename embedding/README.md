@@ -12,7 +12,7 @@ See the Butterfish help for how to use this module through the CLI. If you'd lik
 
 ```go
 import "fmt"
-import "github.com/bakks/butterfish/embedding"
+import "github.com/mbush91/butterfish/embedding"
 
 func main() {
   // create an embedder which implements the embedding.Embedder interface
